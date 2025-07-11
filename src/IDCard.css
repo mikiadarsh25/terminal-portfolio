@@ -1,0 +1,69 @@
+.idcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.idcard-rope {
+  width: 4px;
+  height: 48px;
+  background: #222;
+  margin-bottom: -16px;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.idcard-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  position: relative;
+  border: 6px solid #fff;
+  transition: transform 0.3s cubic-bezier(.36,1.7,.57,.9);
+}
+
+.idcard-card:hover {
+  transform: rotateZ(-8deg) scale(1.04);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+}
+
+.idcard-photo {
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #eee;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.idcard-info {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.idcard-name {
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.idcard-label {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0.2rem 0 0 0;
+  font-weight: 500;
+}
+
+/* Optional: Add a subtle shadow to the whole container for depth */
+.idcard-container {
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,0.10));
+} 

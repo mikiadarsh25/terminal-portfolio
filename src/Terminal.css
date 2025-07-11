@@ -1,0 +1,69 @@
+.terminal-container {
+  width: 100%;
+  height: 80vh;
+  background: #181818;
+  color: #d2ffd2;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #000a;
+  margin: 2rem auto;
+}
+
+.terminal-window {
+  width: 90vw;
+  max-width: 700px;
+  height: 70vh;
+  background: #181818;
+  padding: 2rem 1rem 1rem 1rem;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #0008;
+  font-size: 1.1rem;
+}
+
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2em;
+}
+
+.terminal-output-line pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.terminal-prompt {
+  color: #00ff00;
+  margin-right: 0.5em;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: #d2ffd2;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  width: 60vw;
+  max-width: 500px;
+}
+
+.terminal-cursor {
+  color: #00ff00;
+  margin-left: 2px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.blinking {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+} 
