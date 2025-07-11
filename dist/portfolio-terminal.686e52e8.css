@@ -1,0 +1,75 @@
+.terminal-container {
+  color: #d2ffd2;
+  background: #181818;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  margin: 2rem auto;
+  font-family: Fira Mono, Consolas, Menlo, monospace;
+  display: flex;
+  box-shadow: 0 0 16px #000a;
+}
+
+.terminal-window {
+  background: #181818;
+  border-radius: 8px;
+  width: 90vw;
+  max-width: 700px;
+  height: 70vh;
+  padding: 2rem 1rem 1rem;
+  font-size: 1.1rem;
+  overflow-y: auto;
+  box-shadow: 0 0 8px #0008;
+}
+
+.terminal-input-line {
+  align-items: center;
+  margin-bottom: .2em;
+  display: flex;
+}
+
+.terminal-output-line pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+}
+
+.terminal-prompt {
+  color: #0f0;
+  margin-right: .5em;
+}
+
+.terminal-input {
+  color: #d2ffd2;
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  width: 60vw;
+  max-width: 500px;
+}
+
+.terminal-cursor {
+  color: #0f0;
+  opacity: 1;
+  margin-left: 2px;
+  font-weight: bold;
+}
+
+.blinking {
+  animation: 1s step-end infinite blink;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=portfolio-terminal.686e52e8.css.map */
